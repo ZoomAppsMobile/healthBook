@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:id="@+id/edit_type"
+        android:background="@drawable/border"
+        android:hint="Температура"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_gray" />
+
+</LinearLayout>

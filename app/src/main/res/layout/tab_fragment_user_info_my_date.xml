@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="14dp"
+        android:text="Персональные данные:"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:padding="15sp"
+        android:elevation="3dp"
+        android:background="@drawable/border"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Пол: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/userGender"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="женский"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#58B537"
+            android:textSize="17dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Дата рождения: "
+            android:layout_weight="1"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/birthdateUser"
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1999.20.10"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#58B537"
+            android:textSize="17dp"
+           />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Рост: "
+            android:layout_weight="1"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/txtHeight"
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:hint="не указана"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#58B537"
+            android:textSize="17dp"
+           />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Вес: "
+                android:layout_weight="1"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_weight="1"
+                android:hint="не указана"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Группа крови: "
+                android:layout_weight="1"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtBloodGrooup"
+                android:layout_weight="1"
+                android:hint="не указана"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Телефон: "
+                android:layout_weight="1"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtNumber"
+                android:layout_weight="1"
+                android:hint="не указана"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Дата рождения: "
+                android:layout_weight="1"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtYear"
+                android:layout_weight="1"
+                android:hint="не указана"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:padding="15sp"
+        android:elevation="3dp"
+        android:background="@drawable/border"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Аллергия: "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/allergy"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Прошлые болезни: "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/pastIlnessesProfileEdit"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Хронические заболевания:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:id="@+id/chronicDiseasesProfileEdit"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Наследственные заболевания:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:id="@+id/heredityProfileEdit"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Плохие привычки:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlackLow"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:id="@+id/badhabitsProfileEdit"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#58B537"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

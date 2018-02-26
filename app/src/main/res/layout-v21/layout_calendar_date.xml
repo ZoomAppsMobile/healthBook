@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_item_fl"
+    android:padding="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.percent.PercentRelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_gravity="center"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"/>
+        <TextView
+            android:id="@+id/date_item_TV"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"
+            android:text="25"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/event_mark_IV"
+            android:src="@drawable/selected_date_xml"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"/>
+    <ImageView
+            android:id="@+id/womanday2"
+            android:visibility="gone"
+            android:src="@drawable/selected_woman_xml"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"/>
+
+
+        <ImageView
+            android:id="@+id/evolution"
+            android:visibility="gone"
+            android:src="@drawable/evolution_xml"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"/>
+
+
+
+        <ImageView
+            android:id="@+id/womanday"
+            android:visibility="gone"
+
+            android:src="@drawable/evented_date_xml"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"/>
+
+
+        <ImageView
+            android:id="@+id/drugs_mark_IV"
+            android:src="@drawable/drugs_date_xml"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </android.support.percent.PercentRelativeLayout>
+
+</FrameLayout>

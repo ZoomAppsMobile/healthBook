@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_clinic_doc"
+        icon="@drawable/ic_ambulance"
+        title="Клиника/Врачи" />
+    <tab
+        id="@+id/tab_feed"
+        icon="@drawable/ic_notif"
+        title="Лента" />
+    <tab
+        id="@+id/tab_news"
+        icon="@drawable/ic_news"
+        title="Новости" />
+    <tab
+        id="@+id/tab_knowledge"
+        icon="@drawable/ic_book"
+        title="Знания" />
+</tabs>

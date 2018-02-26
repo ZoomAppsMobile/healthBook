@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>SockChat</title>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+    <script type="text/javascript" >
+      var sock = new SockJS('https://healthbook.kz/chat_socket');
+ 
+       sock.onopen = function() {
+           console.log('open');
+           WebAppInterface.onOpen();
+       };
+
+       sock.onmessage = function(e) {
+           //console.log('message', e.data);
+           WebAppInterface.onMessage(e.data);
+       };
+
+       sock.onclose = function() {
+           console.log('close');
+           WebAppInterface.onClose();
+       };
+
+      
+      function sendMessage(message){
+          sock.send(message);
+      };
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.afollestad.material-dialogs:core-0.9.4.7">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/72b1de88f740983f40b3b7dec3d7bfeed399c7cd/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/72b1de88f740983f40b3b7dec3d7bfeed399c7cd/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

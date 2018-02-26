@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.d.healthbook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".API.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity android:name=".Activities.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity
+            android:name=".Activities.MainPageActivity"
+            android:label="@string/title_activity_main_page" />
+        <activity android:name=".Activities.DoctorActivityInfo" />
+        <activity android:name=".Activities.ClinicActivityInfo" />
+        <activity android:name=".Activities.NewsActivityInfo" />
+        <activity android:name=".Activities.ProtocolCategoryActivity" />
+        <activity android:name=".Activities.DrugsCategoryActivity" />
+        <activity android:name=".Activities.DiseaseCategoryActivity" />
+        <activity android:name=".Activities.ChannelInfoActivity" />
+        <activity android:name=".Activities.VisitInfoActivity" />
+        <activity android:name=".Activities.ChooseVisitDataActivity" />
+        <activity android:name=".CalendarPackage.CalendarView" />
+        <activity android:name=".Activities.UserActivityInfo" />
+        <activity android:name=".CalendarBekarysa.CalendarActivity" />
+        <activity android:name=".Activities.ChatActivityShowAllChat" />
+        <activity android:name=".Activities.AuthActivity" />
+        <activity
+            android:name=".Activities.ChatActivityShowMessage"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Activities.ChatActivityChooseManForGroup" />
+        <activity android:name=".Activities.DiaryActivity" />
+        <activity android:name=".Activities.SettingsActivity"></activity>
+        <activity
+            android:name=".Activities.DialogsActivity"
+            android:label="@string/title_activity_dialogs"
+            android:theme="@style/MyAppTheme"></activity>
+        <activity
+            android:name=".Activities.SearchDoctorActivity"
+            android:label="@string/title_activity_search_doctor"
+            android:theme="@style/MyAppTheme"></activity>
+        <activity android:name=".Activities.ChatActivity"></activity>
+        <activity
+            android:name=".Activities.ZoomActivity"
+            android:label="@string/title_activity_zoom"
+            android:theme="@style/MyAppTheme"></activity>
+        <activity android:name=".Activities.FileActivity"></activity>
+        <activity
+            android:name=".Activities.FoldersActivity"
+            android:label="@string/title_activity_folder"
+            android:theme="@style/MyAppTheme"></activity>
+        <activity
+            android:name=".Activities.ParameterDetailsActivity"
+            android:label="@string/title_activity_parameter_details"
+            android:theme="@style/MyAppTheme"></activity>
+        <activity android:name=".Test.TestActivity"></activity>
+        <activity android:name=".Activities.SearchDoctorActivity2"></activity>
+    </application>
+
+</manifest>
