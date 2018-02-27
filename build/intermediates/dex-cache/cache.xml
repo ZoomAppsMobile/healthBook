@@ -84,6 +84,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\healthBook\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\healthBook\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0ed93b27bbc3e5eb48aea48cdffe4573f93eddc5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Asus\.android\build-cache\47045bdf40dd3d8ca6a559452e41d573c6eebe61\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -117,6 +126,15 @@
         revision="25.0.3"
         sha1="5b65ec1ebc84af3baecfd28954c9e7ff01b937a8">
         <dex dex="C:\Users\Asus\Desktop\healbook finish\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdd2c4547ac5ad393d42e023bf01dcf526059609\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\healthBook\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5513b62117cfb630e3a607dea2c0124d71ce7d72">
+        <dex dex="C:\healthBook\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b2db8c0a5ad1f71816bfd2c92ea1da11515ac469\classes.dex" />
     </item>
     <item
         is-multidex="true"

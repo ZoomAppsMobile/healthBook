@@ -52,8 +52,8 @@ public class TabFragmentInfoDoc extends Fragment {
             Log.d("First", first);
             if (first.equals("{\"")) {
 
-                // textView.setText(Html.fromHtml( (parseJson(mainData.getInfo()))));
-//                markdownView.loadMarkdown((parseJson(mainData.getInfo())));
+                 textView.setText(Html.fromHtml( (parseJson(mainData.getInfo()))));
+                markdownView.loadMarkdown((parseJson(mainData.getInfo())));
 
                 ;
 
