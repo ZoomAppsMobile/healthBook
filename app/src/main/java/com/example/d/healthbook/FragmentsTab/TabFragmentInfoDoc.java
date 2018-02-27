@@ -45,17 +45,16 @@ public class TabFragmentInfoDoc extends Fragment {
             setDataToViews();
         }
     }
-
     public void setDataToViews() {
         if (mainData != null && isViewCreated) {
             String first = mainData.getInfo().substring(0, 2);
             Log.d("First", first);
             if (first.equals("{\"")) {
 
-                 textView.setText(Html.fromHtml( (parseJson(mainData.getInfo()))));
-                markdownView.loadMarkdown((parseJson(mainData.getInfo())));
+//                 textView.setText(Html.fromHtml( (parseJson(mainData.getInfo()))));
+//                markdownView.loadMarkdown((parseJson(mainData.getInfo())));
 
-                ;
+
 
             } else {
                 textView.setText(Html.fromHtml(mainData.getInfo()));
