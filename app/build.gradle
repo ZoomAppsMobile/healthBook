@@ -106,6 +106,8 @@ dependencies {
     compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
     compile 'org.jsoup:jsoup:1.8.3'
     compile 'us.feras.mdv:markdownview:1.1.0'
+    compile 'com.yydcdut:rxmarkdown:0.1.1-beta'
+
 
 
 

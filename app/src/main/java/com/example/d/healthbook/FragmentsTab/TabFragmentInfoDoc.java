@@ -14,6 +14,12 @@ import android.widget.Toast;
 import com.example.d.healthbook.API.App;
 import com.example.d.healthbook.Models.ResponseDoctorInfo;
 import com.example.d.healthbook.R;
+import com.yydcdut.rxmarkdown.RxMDConfiguration;
+import com.yydcdut.rxmarkdown.RxMDEditText;
+import com.yydcdut.rxmarkdown.RxMDTextView;
+import com.yydcdut.rxmarkdown.RxMarkdown;
+import com.yydcdut.rxmarkdown.syntax.edit.EditFactory;
+import com.yydcdut.rxmarkdown.syntax.text.TextFactory;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,10 +28,15 @@ import org.sufficientlysecure.htmltextview.HtmlResImageGetter;
 import org.sufficientlysecure.htmltextview.HtmlTextView;
 
 import java.util.StringTokenizer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 import us.feras.mdv.MarkdownView;
 
 /**
@@ -38,6 +49,9 @@ public class TabFragmentInfoDoc extends Fragment {
     private boolean isViewCreated = false;
     ResponseDoctorInfo mainData;
     MarkdownView markdownView;
+    private RxMDTextView mRxMDTextView;
+    private RxMDConfiguration mRxMDConfiguration;
+
 
     public void upDateData(ResponseDoctorInfo data) {
         if (data != null) {
@@ -45,25 +59,59 @@ public class TabFragmentInfoDoc extends Fragment {
             setDataToViews();
         }
     }
+
     public void setDataToViews() {
         if (mainData != null && isViewCreated) {
             String first = mainData.getInfo().substring(0, 2);
             Log.d("First", first);
             if (first.equals("{\"")) {
 
-//                 textView.setText(Html.fromHtml( (parseJson(mainData.getInfo()))));
-//                markdownView.loadMarkdown((parseJson(mainData.getInfo())));
+                mRxMDConfiguration = new RxMDConfiguration.Builder(getContext())
+                        .build();
+
+                RxMarkdown.with((parseJson(mainData.getInfo())),getContext())
+                        .config(mRxMDConfiguration)
+                        .factory(TextFactory.create())
+                        .intoObservable()
+                .subscribeOn(Schedulers.computation())
+                .observeOn(AndroidSchedulers.mainThread())
+                        .subscribe(new Subscriber<CharSequence>() {
+                            @Override
+                            public void onCompleted() {
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+                                Toast.makeText(getContext(),  e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onNext(CharSequence charSequence) {
+                                //String text = charSequence.toString();
+                                //String textResult = text.replace("\\", "");
+                                //Log.e("textResult", charSequence + "");
+                                mRxMDTextView.setText(charSequence, TextView.BufferType.SPANNABLE);
+                            }
+                        });
 
 
+
+             //markdownView.loadMarkdown((parseJson(mainData.getInfo()).replaceAll("\"", "")));
+                //testTest.setText((parseJson(mainData.getInfo())).replaceAll("", ""));
+                Log.e("log", (parseJson(mainData.getInfo())));
 
             } else {
-                textView.setText(Html.fromHtml(mainData.getInfo()));
-                Log.e("ParseJSON", mainData.getInfo().toString());
+                textView.setText(Html.fromHtml(mainData.getInfo().replaceAll("\"", "")));
+               Log.e("ParseJSON", mainData.getInfo().toString());
 
+//                testTest.setText((parseJson(mainData.getInfo())).replaceAll("((^|\\s+)(\\w))", ""));
             }
+
 
         }
     }
+
+
 
     public String parseJson(String jsonStr) {
 
@@ -79,6 +127,7 @@ public class TabFragmentInfoDoc extends Fragment {
                 JSONObject address = place.getJSONObject(0).getJSONObject("data");
 
                 content = address.getString("text");
+
                 // String country = address.getString("country");
                 // String state = address.getString("state");
                 // String county = address.getString("county");
@@ -91,7 +140,7 @@ public class TabFragmentInfoDoc extends Fragment {
         }
 
 
-        return content;
+        return content.replace("\\", "");
     }
 
     @Override
@@ -107,15 +156,13 @@ public class TabFragmentInfoDoc extends Fragment {
                 String first = tokens.nextToken();// this will contain "Fruit"
                 String second = tokens.nextToken();// this will contain " they taste good"
 
-                Log.e("repser",second );
+                Log.e("repser", second);
             }
 
             @Override
             public void onFailure(Call<ResponseDoctorInfo> call, Throwable t) {
-                Log.e("infoDoctor",  t.getMessage().toString());
+                Log.e("infoDoctor", t.getMessage().toString());
                 String s = t.getMessage().toString();
-
-
 
 
             }
@@ -138,9 +185,8 @@ public class TabFragmentInfoDoc extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         textView = (TextView) view.findViewById(R.id.pagerTVdocInfo);
-
-        markdownView = (MarkdownView) view.findViewById(R.id.markdownView);
-
+       // markdownView = (MarkdownView) view.findViewById(R.id.markdownView);
+        mRxMDTextView = view.findViewById(R.id.txt_md_show);
 
         isViewCreated = true;
         setDataToViews();

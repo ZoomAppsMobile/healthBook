@@ -38,10 +38,24 @@
                 android:textSize="18sp"
                 android:textColor="@color/black" />
 
+
+
+
             <us.feras.mdv.MarkdownView
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="match_parent"
                 android:id="@+id/markdownView" />
+
+            <com.yydcdut.rxmarkdown.RxMDTextView
+                android:id="@+id/txt_md_show"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нет информации"/>
+
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

@@ -176,8 +176,8 @@ public class RecyclerAdapterAllSubscriptionToDoc extends RecyclerView.Adapter<Re
                     intent.putExtra("imageDoc", responseAllSubscriptionsToDoctors.get(position).getPhoto());
                     intent.putExtra("nameDoc", String.valueOf(responseAllSubscriptionsToDoctors.get(position).getName()));
                     intent.putExtra("surNameDoc", String.valueOf(responseAllSubscriptionsToDoctors.get(position).getSurname()));
-                    intent.putExtra("company_name", String.valueOf(responseAllSubscriptionsToDoctors.get(position).getClinicName()));
-                    Toast.makeText(context, String.valueOf(responseAllSubscriptionsToDoctors.get(position).getClinicName()) + "", Toast.LENGTH_SHORT).show();
+                    intent.putExtra("company_name", String.valueOf(responseAllSubscriptionsToDoctors.get(0).getSpeciality()));
+                   // Toast.makeText(context, String.valueOf(responseAllSubscriptionsToDoctors.get(position).getRooms().get(0).getName()) + "", Toast.LENGTH_SHORT).show();
                     context.startActivity(intent);
 
                 }
