@@ -68,82 +68,82 @@ public class RecyclerDoctorListAdapter extends RecyclerView.Adapter<RecyclerDoct
         if(exp!=null){
             switch (exp) {
                 case "1":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "год");
+                    experianceOfDoctor = exp + " год";
                     break;
                 case "2":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp + " года";
                     break;
                 case "3":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor =  exp + " года";
                     break;
                 case "4":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor =  exp +  " года";
                     break;
                 case "5":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "лет");
+                    experianceOfDoctor =  exp +  " лет";
                     break;
                 case "21":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "год");
+                    experianceOfDoctor = exp +  " год";
                     break;
                 case "22":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor =  exp +  " года";
                     break;
                 case "23":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor =  exp +  " года";
                     break;
                 case "24":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor =  exp +  " года";
                     break;
                 case "31":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "год");
+                    experianceOfDoctor =  exp +  " год";;
                     break;
                 case "32":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "33":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "34":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp + " года";
                     break;
                 case "41":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "год");
+                    experianceOfDoctor = exp +  " год";
                     break;
                 case "42":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp + " года";
                     break;
                 case "43":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "44":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "51":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "год");
+                    experianceOfDoctor = exp +  " год";
                     break;
                 case "52":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "53":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "54":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp + " года";
                     break;
                 case "61":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "год");
+                    experianceOfDoctor = exp +  " год";
                     break;
                 case "62":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "63":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp +  " года";
                     break;
                 case "64":
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "года");
+                    experianceOfDoctor = exp + " года";
                     break;
                 default: {
-                    experianceOfDoctor = String.format("Опыт работы: %s %s", exp, "лет");
+                    experianceOfDoctor = exp +  " лет";
                 }
             }
         }
@@ -207,6 +207,8 @@ public class RecyclerDoctorListAdapter extends RecyclerView.Adapter<RecyclerDoct
 
 
     }
+
+
 
     @Override
     public int getItemCount() {

@@ -414,6 +414,7 @@ public class UserActivityInfo extends BaseActivity implements UserInterface {
                 registeredUserMyFamily = response.body();
                 if (adapter != null) {
                     adapter.OnResponseSuccesMyfamily(registeredUserMyFamily);
+                    adapter.notifyDataSetChanged();
                 }
             }
 

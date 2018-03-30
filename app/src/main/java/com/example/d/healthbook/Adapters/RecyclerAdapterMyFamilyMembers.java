@@ -11,14 +11,24 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.d.healthbook.API.App;
 import com.example.d.healthbook.Activities.DrugsCategoryActivity;
+import com.example.d.healthbook.Activities.UserActivityInfo;
+import com.example.d.healthbook.GlobalVariables.GlobalVariables;
 import com.example.d.healthbook.Models.DocumentMyFamily;
 import com.example.d.healthbook.Models.ResponseMyFamilyMembers;
 import com.example.d.healthbook.R;
 import com.example.d.healthbook.View.AdapterInteraction;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Created by D on 05.07.2017.
@@ -62,6 +72,26 @@ public class RecyclerAdapterMyFamilyMembers extends RecyclerView.Adapter<Recycle
             }
         });
 
+        holder.del_fam_men.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                App.getApi().deleteFamilyMember(GlobalVariables.user_auth_token,myFamilyMemberses.get(position).getId() ).enqueue(new Callback<Void>() {
+                    @Override
+                    public void onResponse(Call<Void> call, Response<Void> response) {
+                        Toast.makeText(context, "Вы успешно удалили члена семьи", Toast.LENGTH_LONG).show();
+                        EventBus.getDefault().post("goRestartAdapter");
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<Void> call, Throwable throwable) {
+                        Toast.makeText(context, "Ошибка при удалении", Toast.LENGTH_LONG).show();
+                    }
+                });
+                notifyDataSetChanged();
+            }
+        });
+
     }
 
 
@@ -75,7 +105,7 @@ public class RecyclerAdapterMyFamilyMembers extends RecyclerView.Adapter<Recycle
 
         TextView name_surname_memberOfFamily;
         LinearLayout linearLayout;
-        ImageButton imgBtn;
+        ImageButton imgBtn, del_fam_men;
 
         public ViewHolder(final View v) {
             super(v);
@@ -84,6 +114,7 @@ public class RecyclerAdapterMyFamilyMembers extends RecyclerView.Adapter<Recycle
             linearLayout = (LinearLayout) v.findViewById(R.id.line1);
             imgBtn = (ImageButton) v.findViewById(R.id.imageButton);
             name_surname_memberOfFamily = (TextView) v.findViewById(R.id.name_surname_memberOfFamily);
+            del_fam_men = v.findViewById(R.id.del_fam_men);
             name_surname_memberOfFamily.setTypeface(font);
 
         }

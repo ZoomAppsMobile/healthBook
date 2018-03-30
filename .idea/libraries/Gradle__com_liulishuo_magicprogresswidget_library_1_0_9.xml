@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liulishuo.magicprogresswidget:library-1.0.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/71c3bfc42e4310f612930de2c9a24d09784e92ed/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/71c3bfc42e4310f612930de2c9a24d09784e92ed/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liulishuo.magicprogresswidget/library/1.0.9/9be8ab9e1295cae79145127f6fc787039ca1c2d6/library-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

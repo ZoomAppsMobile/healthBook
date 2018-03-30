@@ -66,10 +66,9 @@ public interface BaseAPI {
 
 
 
-
-
-
-
+    @Headers("Content-Type: application/json")
+    @DELETE("healthbook/diary/{id}")
+    public Call<Void> deleteFamilyMember(@Header("auth-token") String auth_token ,@Path("id") String id);
 
     @Headers("Content-Type: application/json")
     @DELETE("calendar/action/{actionId}")

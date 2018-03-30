@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.d.healthbook.API.App;
 import com.example.d.healthbook.Activities.FileActivity;
@@ -28,6 +29,10 @@ import com.example.d.healthbook.R;
 import com.example.d.healthbook.View.AdapterInteraction;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,6 +62,9 @@ public class TabUserInfoMyFamily extends Fragment implements AdapterInteraction 
     private Button send_sms_btn;
     private EditText userPhone_ED;
 
+
+
+
     private List<DocumentMyFamily>  myFamilyMemberses =  new  ArrayList();
     public void upDateData(ResponseMyFamilyMembers data) {
         if (data != null) {
@@ -71,9 +79,6 @@ public class TabUserInfoMyFamily extends Fragment implements AdapterInteraction 
             family_list_container_LL.setVisibility(View.VISIBLE);
             confirm_phone_container_LL.setVisibility(View.GONE);
             mRecyclerView.setVisibility(View.VISIBLE);
-
-
-
             for(int i =0;i<mainData.getDocuments().size();i++){
 
 
@@ -87,16 +92,13 @@ public class TabUserInfoMyFamily extends Fragment implements AdapterInteraction 
                     documentMyFamily.setCreateDate(mainData.getDocuments().get(i).getCreateDate());
                     documentMyFamily.setUpdateDate(mainData.getDocuments().get(i).getUpdateDate());
                     myFamilyMemberses.add(documentMyFamily);
-
-
                 }
-
-
 
             }
 
             adapterMyFamilyMembers = new RecyclerAdapterMyFamilyMembers(myFamilyMemberses, getActivity(),this);
-            mRecyclerView.setAdapter(adapterMyFamilyMembers);
+            adapterMyFamilyMembers.notifyDataSetChanged();
+            //mRecyclerView.setAdapter(adapterMyFamilyMembers);
         }
         else if (mainData != null && isViewCreated&&responseGetUserData.getConfirmedPhone()==null){
             family_list_container_LL.setVisibility(View.VISIBLE);
@@ -168,8 +170,21 @@ public class TabUserInfoMyFamily extends Fragment implements AdapterInteraction 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        EventBus.getDefault().register(this);
         return inflater.inflate(R.layout.tab_fragment_user_info_my_family, container, false);
+
     }
+
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(String event) {
+        switch (event){
+            case "goRestartAdapter":
+                seeUserFamilyMembers();
+                break;
+        }
+
+    };
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {

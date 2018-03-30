@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Asus\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.1.1\5cd91fd014f5b72292f959748c20a2cefefae77d\eventbus-3.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5cd91fd014f5b72292f959748c20a2cefefae77d">
+        <dex dex="C:\Users\Asus\Desktop\healthBook-Android_HealthBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.1.1_39e116557d1958af1e0996267421935e47a9e185\classes.dex" />
+    </item>
+
+</items>

@@ -24,6 +24,7 @@
             android:textColor="@color/colorBlackLow"
             android:textSize="20dp" />
 
+
         <ImageButton
             android:id="@+id/imageButton"
             android:padding="15sp"
@@ -32,5 +33,14 @@
             android:layout_gravity="center|end"
             android:layout_marginRight="20dp"
             android:background="@drawable/ic_pencil_member" />
+
+        <ImageButton
+            android:id="@+id/del_fam_men"
+            android:padding="15sp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|end"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/deleter_family_member" />
     </LinearLayout>
 </LinearLayout>
