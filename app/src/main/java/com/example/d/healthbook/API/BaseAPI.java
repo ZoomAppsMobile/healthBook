@@ -180,9 +180,10 @@ public interface BaseAPI {
     public Call<ResponseGetUserData> seedUserInfo(@Header("auth-token") String auth_token, @Path("userId") Integer userId);
 
     //TODO : CHANGE TO https://healthbook.kz/api/booking/companyPoint/clinic/search?city_id=1&page=1
-    @GET("booking/companyPoint")
+//    @GET("booking/companyPoint")
+//    public Call<ResponseClinicList> seeClinicList();
+    @GET("booking/companyPoint/clinic/search")
     public Call<ResponseClinicList> seeClinicList();
-
 
     @GET("booking/companyPoint/clinic/search")
     public Call<ResponseClinicList> seeClinicListByName(@Query("name") String name);

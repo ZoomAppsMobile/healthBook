@@ -5,58 +5,98 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Clinic {
+    @SerializedName("numfound")
+    @Expose
+    private Integer numfound;
+    @SerializedName("pages")
+    @Expose
+    private Integer pages;
+    @SerializedName("page_size")
+    @Expose
+    private Integer pageSize;
+    @SerializedName("documents")
+    @Expose
+    private List<Document> documents = null;
+    @SerializedName("id")
+    @Expose
+    private String id;
+    @SerializedName("company_id")
+    @Expose
+    private Integer companyId;
+    @SerializedName("speciality")
+    @Expose
+    private Object speciality;
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("city_id")
+    @Expose
+    private Integer cityId;
+    @SerializedName("address")
+    @Expose
+    private String address;
+    @SerializedName("phones")
+    @Expose
+    private String phones;
+    @SerializedName("emails")
+    @Expose
+    private Object emails;
+    @SerializedName("rate")
+    @Expose
+    private Integer rate;
+    @SerializedName("performance_rate")
+    @Expose
+    private Object performanceRate;
+    @SerializedName("efficiency_rate")
+    @Expose
+    private Object efficiencyRate;
+    @SerializedName("quality_price_rate")
+    @Expose
+    private Object qualityPriceRate;
+    @SerializedName("photo")
+    @Expose
+    private String photo;
+    @SerializedName("info")
+    @Expose
+    private String info;
+    @SerializedName("mention_count")
+    @Expose
+    private Integer mentionCount;
+    @SerializedName("expert_count")
+    @Expose
+    private Integer expertCount;
+    @SerializedName("longitude")
+    @Expose
+    private Object longitude;
+    @SerializedName("latitude")
+    @Expose
+    private Object latitude;
+    @SerializedName("updated_time")
+    @Expose
+    private String updatedTime;
+    @SerializedName("expert_names")
+    @Expose
+    private List<String> expertNames = null;
+    @SerializedName("type")
+    @Expose
+    private Integer type;
+    @SerializedName("analysis_count")
+    @Expose
+    private Integer analysisCount;
+    @SerializedName("analysis_names")
+    @Expose
+    private String analysisNames;
+    @SerializedName("analysis_ids")
+    @Expose
+    private Object analysisIds;
 
-@SerializedName("id")
-@Expose
-public String id;
-@SerializedName("name")
-@Expose
-public String name;
-@SerializedName("company_id")
-@Expose
-public String companyId;
-@SerializedName("city_id")
-@Expose
-public String cityId;
-@SerializedName("city")
-@Expose
-public String city;
-@SerializedName("address")
-@Expose
-public String address;
-@SerializedName("photo")
-@Expose
-public String photo;
-@SerializedName("info")
-@Expose
-public String info;
-@SerializedName("emails")
-@Expose
-public String emails;
-@SerializedName("phones")
-@Expose
-public String phones;
-@SerializedName("longitude")
-@Expose
-public Object longitude;
-@SerializedName("latitude")
-@Expose
-public Object latitude;
-@SerializedName("mentions")
-@Expose
-public List<Mention> mentions = null;
-@SerializedName("rate")
-@Expose
-public String rate;
-@SerializedName("performance_rate")
-@Expose
-public Object performanceRate;
-@SerializedName("efficiency_rate")
-@Expose
-public Object efficiencyRate;
-@SerializedName("quality_price_rate")
-@Expose
-public Object qualityPriceRate;
+    public Integer getNumfound() {
+        return numfound;
+    }
+
+    public void setNumfound(Integer numfound) {
+        this.numfound = numfound;
+    }
 
     public String getId() {
         return id;
@@ -64,6 +104,22 @@ public Object qualityPriceRate;
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Integer getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Integer companyId) {
+        this.companyId = companyId;
+    }
+
+    public Object getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(Object speciality) {
+        this.speciality = speciality;
     }
 
     public String getName() {
@@ -74,28 +130,12 @@ public Object qualityPriceRate;
         this.name = name;
     }
 
-    public String getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(String companyId) {
-        this.companyId = companyId;
-    }
-
-    public String getCityId() {
+    public Integer getCityId() {
         return cityId;
     }
 
-    public void setCityId(String cityId) {
+    public void setCityId(Integer cityId) {
         this.cityId = cityId;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
     }
 
     public String getAddress() {
@@ -106,30 +146,6 @@ public Object qualityPriceRate;
         this.address = address;
     }
 
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
-
-    public String getEmails() {
-        return emails;
-    }
-
-    public void setEmails(String emails) {
-        this.emails = emails;
-    }
-
     public String getPhones() {
         return phones;
     }
@@ -138,35 +154,19 @@ public Object qualityPriceRate;
         this.phones = phones;
     }
 
-    public Object getLongitude() {
-        return longitude;
+    public Object getEmails() {
+        return emails;
     }
 
-    public void setLongitude(Object longitude) {
-        this.longitude = longitude;
+    public void setEmails(Object emails) {
+        this.emails = emails;
     }
 
-    public Object getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(Object latitude) {
-        this.latitude = latitude;
-    }
-
-    public List<Mention> getMentions() {
-        return mentions;
-    }
-
-    public void setMentions(List<Mention> mentions) {
-        this.mentions = mentions;
-    }
-
-    public String getRate() {
+    public Integer getRate() {
         return rate;
     }
 
-    public void setRate(String rate) {
+    public void setRate(Integer rate) {
         this.rate = rate;
     }
 
@@ -193,4 +193,125 @@ public Object qualityPriceRate;
     public void setQualityPriceRate(Object qualityPriceRate) {
         this.qualityPriceRate = qualityPriceRate;
     }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public Integer getMentionCount() {
+        return mentionCount;
+    }
+
+    public void setMentionCount(Integer mentionCount) {
+        this.mentionCount = mentionCount;
+    }
+
+    public Integer getExpertCount() {
+        return expertCount;
+    }
+
+    public void setExpertCount(Integer expertCount) {
+        this.expertCount = expertCount;
+    }
+
+    public Object getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Object longitude) {
+        this.longitude = longitude;
+    }
+
+    public Object getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Object latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public void setUpdatedTime(String updatedTime) {
+        this.updatedTime = updatedTime;
+    }
+
+    public List<String> getExpertNames() {
+        return expertNames;
+    }
+
+    public void setExpertNames(List<String> expertNames) {
+        this.expertNames = expertNames;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public Integer getAnalysisCount() {
+        return analysisCount;
+    }
+
+    public void setAnalysisCount(Integer analysisCount) {
+        this.analysisCount = analysisCount;
+    }
+
+    public String getAnalysisNames() {
+        return analysisNames;
+    }
+
+    public void setAnalysisNames(String analysisNames) {
+        this.analysisNames = analysisNames;
+    }
+
+    public Object getAnalysisIds() {
+        return analysisIds;
+    }
+
+    public void setAnalysisIds(Object analysisIds) {
+        this.analysisIds = analysisIds;
+    }
+
+    public Integer getPages() {
+        return pages;
+    }
+
+    public void setPages(Integer pages) {
+        this.pages = pages;
+    }
+
+    public Integer getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
+    }
+
+    public List<Document> getDocuments() {
+        return documents;
+    }
+
+    public void setDocuments(List<Document> documents) {
+        this.documents = documents;
+    }
+
 }

@@ -3,6 +3,7 @@ package com.example.d.healthbook.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,7 @@ public class RecyclerAdapterMentionsClinicInfo extends RecyclerView.Adapter<Recy
         MainController.setImageToViewById(context, mention.get(position).getPhoto(), holder.profileMentionIV);
         holder.nameProfileListMention.setText(mention.get(position).getName() + " " + mention.get(position).getSurname());
         holder.mention_info.setText(mention.get(position).getText());
+
 
 
     }
