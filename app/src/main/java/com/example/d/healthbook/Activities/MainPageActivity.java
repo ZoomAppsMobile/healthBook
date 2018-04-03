@@ -161,13 +161,13 @@ public class MainPageActivity extends AppCompatActivity implements ActivityView 
                         }
 
                         break;
-                    case R.id.nav_diary:
-                        hideKeyboard2(MainPageActivity.this);
-                        startActivity(new Intent(MainPageActivity.this, DiaryActivity.class));
-                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);;
-
-                        finish();
-                        break;
+//                    case R.id.nav_diary:
+//                        hideKeyboard2(MainPageActivity.this);
+//                        startActivity(new Intent(MainPageActivity.this, DiaryActivity.class));
+//                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);;
+//
+//                        finish();
+//                        break;
                     case R.id.nav_profile:
                         hideKeyboard2(MainPageActivity.this);
                         Intent intent = new Intent(MainPageActivity.this, UserActivityInfo.class);

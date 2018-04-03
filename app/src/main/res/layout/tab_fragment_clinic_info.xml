@@ -55,17 +55,10 @@
                     android:isIndicator="true"
                     android:max="5"
                     android:numStars="5"
-                    android:rating="5"
+                    android:rating="1"
                     android:stepSize="0.1"
                     android:theme="@style/MYMYRatingBar" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="5"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
             </LinearLayout>
 
 
@@ -92,10 +85,18 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/black" />
 
-        <us.feras.mdv.MarkdownView
+        <!--<us.feras.mdv.MarkdownView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/markdownView" />-->
+
+        <com.yydcdut.rxmarkdown.RxMDTextView
+            android:id="@+id/txt_md_show"
+            android:textColor="@color/black"
+            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/markdownView" />
+            android:layout_height="wrap_content"
+            android:text="Нет информации"/>
 
     </LinearLayout>
 </ScrollView>

@@ -331,10 +331,90 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
                 String experianceOfDoctor = "Не указано";
                 String exp = DateController.getDateDifferenceWithCondition(registeredUser.getExperience(),
                         DateController.YEAR);
-                if(exp!=null){
-                     experianceOfDoctor = String.format("Опыт работы: %s %s" , exp, "лет");
+                if(exp!=null) {
+                    switch (exp) {
+                        case "1":
+                            experianceOfDoctor = exp + " год";
+                            break;
+                        case "2":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "3":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "4":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "5":
+                            experianceOfDoctor = exp + " лет";
+                            break;
+                        case "21":
+                            experianceOfDoctor = exp + " год";
+                            break;
+                        case "22":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "23":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "24":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "31":
+                            experianceOfDoctor = exp + " год";
+                            ;
+                            break;
+                        case "32":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "33":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "34":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "41":
+                            experianceOfDoctor = exp + " год";
+                            break;
+                        case "42":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "43":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "44":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "51":
+                            experianceOfDoctor = exp + " год";
+                            break;
+                        case "52":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "53":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "54":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "61":
+                            experianceOfDoctor = exp + " год";
+                            break;
+                        case "62":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "63":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        case "64":
+                            experianceOfDoctor = exp + " года";
+                            break;
+                        default: {
+                            experianceOfDoctor = exp + " лет";
+                        }
+                    }
+                    experienceTVINFO.setText(experianceOfDoctor);
                 }
-                experienceTVINFO.setText(experianceOfDoctor);
 
                 if (adapter != null)
                     adapter.onResponseSuccess(registeredUser);

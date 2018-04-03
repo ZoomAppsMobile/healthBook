@@ -11,7 +11,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.d.healthbook.Activities.ClinicActivityInfo;
 import com.example.d.healthbook.Adapters.RecyclerAdapterMentionsClinicInfo;
@@ -74,9 +76,9 @@ public class TabFragmentMentionsClinic extends Fragment {
 //                                String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                         String currentDateandTime = sdf.format(new Date());
+                        
 
-
-                    }
+                     }
                 })
                 .setNegativeButton("Нет", new DialogInterface.OnClickListener() {
                     public void onClick(final DialogInterface dialog, final int id) {

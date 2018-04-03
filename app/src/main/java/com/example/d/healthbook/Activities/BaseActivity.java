@@ -99,14 +99,14 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseActi
                            // drawerLayout.closeDrawer(Gravity.LEFT);
                         }
                         break;
-                    case R.id.nav_diary:
-                        if(checkCurrentActivity(currentActivity, DiaryActivity.class)) {
-                            intent = new Intent(context, DiaryActivity.class);
-                            startActivity(intent);
-                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);;
-                            finish();
-                        }
-                        break;
+//                    case R.id.nav_diary:
+//                        if(checkCurrentActivity(currentActivity, DiaryActivity.class)) {
+//                            intent = new Intent(context, DiaryActivity.class);
+//                            startActivity(intent);
+//                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);;
+//                            finish();
+//                        }
+//                        break;
                     case R.id.nav_folders:{
                         if(checkCurrentActivity(currentActivity,FoldersActivity.class)){
                             startActivity(new Intent(context,FoldersActivity.class));

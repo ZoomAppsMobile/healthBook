@@ -5,6 +5,10 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a657544a-838d-426c-ac75-70fb9b2a025e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +28,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="healthBook-Android_HealthBook" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -32,245 +41,52 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="MainPageActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/MainPageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="241" column="44" lean-forward="false" selection-start-line="241" selection-start-column="44" selection-end-line="241" selection-end-column="44" />
-              <folding>
-                <element signature="e#3646#3689#0" expanded="true" />
-                <element signature="e#3646#3689#0" expanded="true" />
-                <element signature="e#5182#9573#0" expanded="true" />
-                <element signature="e#5399#5422#0" expanded="true" />
-                <element signature="e#5399#5422#0" expanded="true" />
-                <element signature="e#5481#5524#0" expanded="true" />
-                <element signature="e#5481#5524#0" expanded="true" />
-                <element signature="e#5659#5708#0" expanded="true" />
-                <element signature="e#5182#9573#0" expanded="true" />
-                <element signature="e#11690#11936#0" expanded="true" />
-                <element signature="e#11694#11711#0" expanded="true" />
-                <element signature="e#11690#11936#0" expanded="true" />
-                <element signature="e#11774#11926#0" expanded="true" />
-                <element signature="e#11782#11798#0" expanded="true" />
-                <element signature="e#11774#11926#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPageFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/MainPageFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="97" column="100" lean-forward="false" selection-start-line="97" selection-start-column="100" selection-end-line="97" selection-end-column="100" />
-              <folding>
-                <element signature="e#3279#3916#0" expanded="true" />
-                <element signature="e#3279#3916#0" expanded="true" />
-                <element signature="e#4264#4526#0" expanded="true" />
-                <element signature="e#4264#4526#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewPagerFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/ViewPagerFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
-              <folding>
-                <element signature="e#2968#3002#1" expanded="true" />
-                <element signature="e#3328#3369#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomPagerAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/CustomPagerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-              <folding>
-                <element signature="e#1963#1988#0" expanded="true" />
-                <element signature="e#1963#1988#0" expanded="true" />
-                <element signature="e#2488#2513#0" expanded="true" />
-                <element signature="e#2488#2513#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchDoctorsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/SearchDoctorsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="240" column="63" lean-forward="false" selection-start-line="240" selection-start-column="63" selection-end-line="240" selection-end-column="63" />
+            <state relative-caret-position="861">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecyclerDoctorListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerDoctorListAdapter.java">
+      <file leaf-file-name="ClinicActivityInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/ClinicActivityInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1113">
-              <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2572#2709#1" expanded="true" />
-                <element signature="e#2631#2654#0" expanded="true" />
-                <element signature="e#2631#2654#0" expanded="true" />
-                <element signature="e#2631#2670#0" expanded="true" />
-                <element signature="e#2745#5638#0" expanded="true" />
-                <element signature="e#2745#5638#0" expanded="true" />
-                <element signature="e#2827#2839#0" expanded="true" />
-                <element signature="e#2827#2839#0" expanded="true" />
-                <element signature="e#2935#2948#0" expanded="true" />
-                <element signature="e#2935#2948#0" expanded="true" />
-                <element signature="e#3045#3058#0" expanded="true" />
-                <element signature="e#3045#3058#0" expanded="true" />
-                <element signature="e#3155#3169#0" expanded="true" />
-                <element signature="e#3155#3169#0" expanded="true" />
-                <element signature="e#3266#3279#0" expanded="true" />
-                <element signature="e#3266#3279#0" expanded="true" />
-                <element signature="e#3376#3389#0" expanded="true" />
-                <element signature="e#3376#3389#0" expanded="true" />
-                <element signature="e#3487#3501#0" expanded="true" />
-                <element signature="e#3487#3501#0" expanded="true" />
-                <element signature="e#3599#3613#0" expanded="true" />
-                <element signature="e#3599#3613#0" expanded="true" />
-                <element signature="e#3711#3725#0" expanded="true" />
-                <element signature="e#3711#3725#0" expanded="true" />
-                <element signature="e#3823#3836#0" expanded="true" />
-                <element signature="e#3823#3836#0" expanded="true" />
-                <element signature="e#3934#3948#0" expanded="true" />
-                <element signature="e#3934#3948#0" expanded="true" />
-                <element signature="e#4045#4059#0" expanded="true" />
-                <element signature="e#4045#4059#0" expanded="true" />
-                <element signature="e#4156#4169#0" expanded="true" />
-                <element signature="e#4156#4169#0" expanded="true" />
-                <element signature="e#4266#4279#0" expanded="true" />
-                <element signature="e#4266#4279#0" expanded="true" />
-                <element signature="e#4376#4389#0" expanded="true" />
-                <element signature="e#4376#4389#0" expanded="true" />
-                <element signature="e#4486#4500#0" expanded="true" />
-                <element signature="e#4486#4500#0" expanded="true" />
-                <element signature="e#4597#4611#0" expanded="true" />
-                <element signature="e#4597#4611#0" expanded="true" />
-                <element signature="e#4708#4721#0" expanded="true" />
-                <element signature="e#4708#4721#0" expanded="true" />
-                <element signature="e#4818#4832#0" expanded="true" />
-                <element signature="e#4818#4832#0" expanded="true" />
-                <element signature="e#4929#4943#0" expanded="true" />
-                <element signature="e#4929#4943#0" expanded="true" />
-                <element signature="e#5040#5053#0" expanded="true" />
-                <element signature="e#5040#5053#0" expanded="true" />
-                <element signature="e#5150#5163#0" expanded="true" />
-                <element signature="e#5150#5163#0" expanded="true" />
-                <element signature="e#5260#5274#0" expanded="true" />
-                <element signature="e#5260#5274#0" expanded="true" />
-                <element signature="e#5371#5385#0" expanded="true" />
-                <element signature="e#5371#5385#0" expanded="true" />
-                <element signature="e#5482#5495#0" expanded="true" />
-                <element signature="e#5482#5495#0" expanded="true" />
-                <element signature="e#5592#5605#0" expanded="true" />
-                <element signature="e#5592#5605#0" expanded="true" />
-                <element signature="e#5657#5712#0" expanded="true" />
-                <element signature="e#5657#5712#0" expanded="true" />
-                <element signature="e#5722#5799#0" expanded="true" />
-                <element signature="e#5759#5782#0" expanded="true" />
-                <element signature="e#5759#5782#0" expanded="true" />
-                <element signature="e#5759#5798#0" expanded="true" />
-                <element signature="e#5722#5799#0" expanded="true" />
-                <element signature="e#5812#5832#0" expanded="true" />
-                <element signature="e#5812#5832#0" expanded="true" />
-                <element signature="e#5851#5882#0" expanded="true" />
-                <element signature="e#5851#5882#0" expanded="true" />
-                <element signature="e#6215#6238#0" expanded="true" />
-                <element signature="e#6215#6238#0" expanded="true" />
-                <element signature="e#6215#6255#0" expanded="true" />
-                <element signature="e#6365#6376#0" expanded="true" />
-                <element signature="e#6478#8835#0" expanded="true" />
-                <element signature="e#6513#8834#0" expanded="true" />
-                <element signature="e#8833#8834#0" expanded="true" />
-                <element signature="e#6478#8835#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1218">
+              <caret line="90" column="31" lean-forward="false" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecyclerAdapterAllSubscriptionToDoc.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerAdapterAllSubscriptionToDoc.java">
+      <file leaf-file-name="PagerAdapterClinicInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/PagerAdapterClinicInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
-              <folding>
-                <element signature="e#2671#5564#0" expanded="true" />
-                <element signature="e#2671#5564#0" expanded="true" />
-                <element signature="e#2753#2765#0" expanded="true" />
-                <element signature="e#2753#2765#0" expanded="true" />
-                <element signature="e#2861#2874#0" expanded="true" />
-                <element signature="e#2861#2874#0" expanded="true" />
-                <element signature="e#2971#2984#0" expanded="true" />
-                <element signature="e#2971#2984#0" expanded="true" />
-                <element signature="e#3081#3095#0" expanded="true" />
-                <element signature="e#3081#3095#0" expanded="true" />
-                <element signature="e#3192#3205#0" expanded="true" />
-                <element signature="e#3192#3205#0" expanded="true" />
-                <element signature="e#3302#3315#0" expanded="true" />
-                <element signature="e#3302#3315#0" expanded="true" />
-                <element signature="e#3413#3427#0" expanded="true" />
-                <element signature="e#3413#3427#0" expanded="true" />
-                <element signature="e#3525#3539#0" expanded="true" />
-                <element signature="e#3525#3539#0" expanded="true" />
-                <element signature="e#3637#3651#0" expanded="true" />
-                <element signature="e#3637#3651#0" expanded="true" />
-                <element signature="e#3749#3762#0" expanded="true" />
-                <element signature="e#3749#3762#0" expanded="true" />
-                <element signature="e#3860#3874#0" expanded="true" />
-                <element signature="e#3860#3874#0" expanded="true" />
-                <element signature="e#3971#3985#0" expanded="true" />
-                <element signature="e#3971#3985#0" expanded="true" />
-                <element signature="e#4082#4095#0" expanded="true" />
-                <element signature="e#4082#4095#0" expanded="true" />
-                <element signature="e#4192#4205#0" expanded="true" />
-                <element signature="e#4192#4205#0" expanded="true" />
-                <element signature="e#4302#4315#0" expanded="true" />
-                <element signature="e#4302#4315#0" expanded="true" />
-                <element signature="e#4412#4426#0" expanded="true" />
-                <element signature="e#4412#4426#0" expanded="true" />
-                <element signature="e#4523#4537#0" expanded="true" />
-                <element signature="e#4523#4537#0" expanded="true" />
-                <element signature="e#4634#4647#0" expanded="true" />
-                <element signature="e#4634#4647#0" expanded="true" />
-                <element signature="e#4744#4758#0" expanded="true" />
-                <element signature="e#4744#4758#0" expanded="true" />
-                <element signature="e#4855#4869#0" expanded="true" />
-                <element signature="e#4855#4869#0" expanded="true" />
-                <element signature="e#4966#4979#0" expanded="true" />
-                <element signature="e#4966#4979#0" expanded="true" />
-                <element signature="e#5076#5089#0" expanded="true" />
-                <element signature="e#5076#5089#0" expanded="true" />
-                <element signature="e#5186#5200#0" expanded="true" />
-                <element signature="e#5186#5200#0" expanded="true" />
-                <element signature="e#5297#5311#0" expanded="true" />
-                <element signature="e#5297#5311#0" expanded="true" />
-                <element signature="e#5408#5421#0" expanded="true" />
-                <element signature="e#5408#5421#0" expanded="true" />
-                <element signature="e#5518#5531#0" expanded="true" />
-                <element signature="e#5518#5531#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="861">
+              <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_main_page.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_page.xml">
+      <file leaf-file-name="TabFragmentMentionsClinic.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentMentionsClinic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab_fragment_mention_clinic.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_mention_clinic.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -279,21 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/FilterFragment.java">
+      <file leaf-file-name="add_reviews_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_reviews_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main_page.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="94" column="47" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="47" />
+            <state relative-caret-position="693">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -308,15 +114,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>page</find>
-      <find>ew</find>
-      <find>seeFamilyMember</find>
-      <find>FileActivity.DATA_KEY</find>
       <find>data</find>
       <find>add</find>
       <find>clickBtnSaveProfileMember</find>
@@ -335,6 +138,18 @@
       <find>TAB</find>
       <find>ada</find>
       <find>recyclerDoctorListAdapter</find>
+      <find>setCo</find>
+      <find>опы</find>
+      <find>pager</find>
+      <find>viewPager</find>
+      <find>setC</find>
+      <find>city</find>
+      <find>clinic/search</find>
+      <find>rating</find>
+      <find>re</find>
+      <find>setCon</find>
+      <find>id</find>
+      <find>toke</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2778,15 +2593,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/deleter_family_member.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_item_my_family_members.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/UserActivityInfo.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerAdapterMyFamilyMembers.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabUserInfoMyFamily.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerDoctorListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerAdapterAllSubscriptionToDoc.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/DoctorActivityInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/test/ClinicActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/MyItemRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/ChatActivityShowAllChat.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/MainPageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentInfoClinic.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_clinic_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_doc_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/ClinicActivityInfo.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentMentionsClinic.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/add_reviews_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentInfoDoc.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_mention_clinic.xml" />
       </list>
     </option>
   </component>
@@ -2812,6 +2642,7 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2854,21 +2685,49 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="healthbook" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="healthBook-Android_HealthBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthBook-Android_HealthBook" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="healthBook-Android_HealthBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthBook-Android_HealthBook" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="healthBook-Android_HealthBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthBook-Android_HealthBook" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1522393468136" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1522640530443" />
     <property name="device.picker.selection" value="Pixel_API_27" />
-    <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://com.example.d.healthbook.Adapters.RecyclerAdapterAllSubscriptionToDoc&#10;Base&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/Activities/BaseActivity.java&#10;Api&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java&#10;TabFragment&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentInfoDoc.java&#10;Ифыу&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/Activities/BaseActivity.java&#10;Tab&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentInfoDoc.java&#10;Clini&#9;PSI&#9;JAVA://com.example.d.healthbook.Activities.ClinicActivityInfo&#10;Clin&#9;PSI&#9;JAVA://com.example.d.healthbook.Activities.test.ClinicActivity&#10;Sub&#9;PSI&#9;JAVA://com.example.d.healthbook.Adapters.RecyclerAdapterAllSubscriptionToDoc&#10;Base&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/Activities/BaseActivity.java&#10;Api&#9;FILE&#9;file://C:/Users/Asus/Desktop/healthBook-Android_HealthBook/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java" />
+    <property name="android.project.structure.last.selected" value="Project" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.profiler.active" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -3029,6 +2888,18 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="healthBook-Android_HealthBook" />
+      <envs />
+    </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -3051,38 +2922,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
     <layout>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81766707" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6020408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.601359" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81426954" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11493018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28410313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -3093,11 +2963,67 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/ViewPagerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/SearchDoctorsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4431">
+          <caret line="240" column="63" lean-forward="false" selection-start-line="240" selection-start-column="63" selection-end-line="240" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerDoctorListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/FilterFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1974">
+          <caret line="94" column="47" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerAdapterAllSubscriptionToDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/deleter_family_member.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3108,7 +3034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3119,7 +3044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3130,7 +3054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1972">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3138,7 +3061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="302" column="60" lean-forward="true" selection-start-line="302" selection-start-column="60" selection-end-line="302" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3146,7 +3068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="179" column="58" lean-forward="false" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3157,7 +3078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131250">
           <caret line="6250" column="19" lean-forward="false" selection-start-line="6250" selection-start-column="19" selection-end-line="6250" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3165,18 +3085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="487" column="30" lean-forward="false" selection-start-line="487" selection-start-column="27" selection-end-line="487" selection-end-column="30" />
-          <folding>
-            <element signature="e#18769#18803#1" expanded="false" />
-            <element signature="e#18780#18802#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="109" column="43" lean-forward="false" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3184,13 +3092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="81" column="68" lean-forward="false" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="68" />
-          <folding>
-            <element signature="e#2718#3601#0" expanded="false" />
-            <element signature="e#2827#2839#0" expanded="false" />
-            <element signature="e#2891#2930#0" expanded="false" />
-            <element signature="e#3214#3235#0" expanded="false" />
-            <element signature="e#3600#3601#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3198,29 +3099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
-          <folding>
-            <element signature="e#2903#2912#1" expanded="false" />
-            <element signature="e#2899#3888#0" expanded="false" />
-            <element signature="e#2899#3888#0" expanded="false" />
-            <element signature="e#2914#2937#0" expanded="false" />
-            <element signature="e#2899#3888#0" expanded="false" />
-            <element signature="e#3152#3175#0" expanded="false" />
-            <element signature="e#3238#3261#0" expanded="false" />
-            <element signature="e#3238#3278#0" expanded="false" />
-            <element signature="e#3337#3360#0" expanded="false" />
-            <element signature="e#3444#3467#0" expanded="false" />
-            <element signature="e#3546#3569#0" expanded="false" />
-            <element signature="e#3646#3669#0" expanded="false" />
-            <element signature="e#3746#3769#0" expanded="false" />
-            <element signature="e#4510#4561#0" expanded="false" />
-            <element signature="e#4587#4646#1" expanded="false" />
-            <element signature="e#7340#7361#0" expanded="false" />
-            <element signature="e#8006#8069#0" expanded="false" />
-            <element signature="e#8108#8173#0" expanded="false" />
-            <element signature="e#9422#9447#0" expanded="false" />
-            <element signature="e#9675#10060#0" expanded="false" />
-            <element signature="e#10059#10060#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3228,12 +3106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1307">
           <caret line="124" column="23" lean-forward="false" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
-          <folding>
-            <element signature="e#1974#2010#0" expanded="false" />
-            <element signature="e#3971#4043#0" expanded="false" />
-            <element signature="e#3971#4043#0" expanded="false" />
-            <element signature="e#3971#4043#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3241,34 +3113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2276">
           <caret line="272" column="15" lean-forward="false" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="239" column="57" lean-forward="false" selection-start-line="239" selection-start-column="41" selection-end-line="239" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="92" column="76" lean-forward="false" selection-start-line="92" selection-start-column="76" selection-end-line="92" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3276,13 +3120,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-735">
           <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="1974">
           <caret line="94" column="47" lean-forward="false" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="47" />
           <folding />
         </state>
@@ -3293,33 +3136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/FilterFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
+        <state relative-caret-position="273">
           <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/MainPageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="241" column="44" lean-forward="false" selection-start-line="241" selection-start-column="44" selection-end-line="241" selection-end-column="44" />
-          <folding>
-            <element signature="e#3646#3689#0" expanded="true" />
-            <element signature="e#3646#3689#0" expanded="true" />
-            <element signature="e#5182#9573#0" expanded="true" />
-            <element signature="e#5399#5422#0" expanded="true" />
-            <element signature="e#5399#5422#0" expanded="true" />
-            <element signature="e#5481#5524#0" expanded="true" />
-            <element signature="e#5481#5524#0" expanded="true" />
-            <element signature="e#5659#5708#0" expanded="true" />
-            <element signature="e#5182#9573#0" expanded="true" />
-            <element signature="e#11690#11936#0" expanded="true" />
-            <element signature="e#11694#11711#0" expanded="true" />
-            <element signature="e#11690#11936#0" expanded="true" />
-            <element signature="e#11774#11926#0" expanded="true" />
-            <element signature="e#11782#11798#0" expanded="true" />
-            <element signature="e#11774#11926#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3336,196 +3154,230 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/MainPageFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="1638">
           <caret line="97" column="100" lean-forward="false" selection-start-line="97" selection-start-column="100" selection-end-line="97" selection-end-column="100" />
-          <folding>
-            <element signature="e#3279#3916#0" expanded="true" />
-            <element signature="e#3279#3916#0" expanded="true" />
-            <element signature="e#4264#4526#0" expanded="true" />
-            <element signature="e#4264#4526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/ViewPagerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
-          <folding>
-            <element signature="e#2968#3002#1" expanded="true" />
-            <element signature="e#3328#3369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/CustomPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-          <folding>
-            <element signature="e#1963#1988#0" expanded="true" />
-            <element signature="e#1963#1988#0" expanded="true" />
-            <element signature="e#2488#2513#0" expanded="true" />
-            <element signature="e#2488#2513#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/SearchDoctorsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="4431">
           <caret line="240" column="63" lean-forward="false" selection-start-line="240" selection-start-column="63" selection-end-line="240" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/CustomPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/ViewPagerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="92" column="35" lean-forward="false" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_doctor_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="214" column="42" lean-forward="false" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerAdapterAllSubscriptionToDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/DoctorActivityInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="476" column="58" lean-forward="false" selection-start-line="476" selection-start-column="58" selection-end-line="476" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerDoctorListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1113">
-          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2572#2709#1" expanded="true" />
-            <element signature="e#2631#2654#0" expanded="true" />
-            <element signature="e#2631#2654#0" expanded="true" />
-            <element signature="e#2631#2670#0" expanded="true" />
-            <element signature="e#2745#5638#0" expanded="true" />
-            <element signature="e#2745#5638#0" expanded="true" />
-            <element signature="e#2827#2839#0" expanded="true" />
-            <element signature="e#2827#2839#0" expanded="true" />
-            <element signature="e#2935#2948#0" expanded="true" />
-            <element signature="e#2935#2948#0" expanded="true" />
-            <element signature="e#3045#3058#0" expanded="true" />
-            <element signature="e#3045#3058#0" expanded="true" />
-            <element signature="e#3155#3169#0" expanded="true" />
-            <element signature="e#3155#3169#0" expanded="true" />
-            <element signature="e#3266#3279#0" expanded="true" />
-            <element signature="e#3266#3279#0" expanded="true" />
-            <element signature="e#3376#3389#0" expanded="true" />
-            <element signature="e#3376#3389#0" expanded="true" />
-            <element signature="e#3487#3501#0" expanded="true" />
-            <element signature="e#3487#3501#0" expanded="true" />
-            <element signature="e#3599#3613#0" expanded="true" />
-            <element signature="e#3599#3613#0" expanded="true" />
-            <element signature="e#3711#3725#0" expanded="true" />
-            <element signature="e#3711#3725#0" expanded="true" />
-            <element signature="e#3823#3836#0" expanded="true" />
-            <element signature="e#3823#3836#0" expanded="true" />
-            <element signature="e#3934#3948#0" expanded="true" />
-            <element signature="e#3934#3948#0" expanded="true" />
-            <element signature="e#4045#4059#0" expanded="true" />
-            <element signature="e#4045#4059#0" expanded="true" />
-            <element signature="e#4156#4169#0" expanded="true" />
-            <element signature="e#4156#4169#0" expanded="true" />
-            <element signature="e#4266#4279#0" expanded="true" />
-            <element signature="e#4266#4279#0" expanded="true" />
-            <element signature="e#4376#4389#0" expanded="true" />
-            <element signature="e#4376#4389#0" expanded="true" />
-            <element signature="e#4486#4500#0" expanded="true" />
-            <element signature="e#4486#4500#0" expanded="true" />
-            <element signature="e#4597#4611#0" expanded="true" />
-            <element signature="e#4597#4611#0" expanded="true" />
-            <element signature="e#4708#4721#0" expanded="true" />
-            <element signature="e#4708#4721#0" expanded="true" />
-            <element signature="e#4818#4832#0" expanded="true" />
-            <element signature="e#4818#4832#0" expanded="true" />
-            <element signature="e#4929#4943#0" expanded="true" />
-            <element signature="e#4929#4943#0" expanded="true" />
-            <element signature="e#5040#5053#0" expanded="true" />
-            <element signature="e#5040#5053#0" expanded="true" />
-            <element signature="e#5150#5163#0" expanded="true" />
-            <element signature="e#5150#5163#0" expanded="true" />
-            <element signature="e#5260#5274#0" expanded="true" />
-            <element signature="e#5260#5274#0" expanded="true" />
-            <element signature="e#5371#5385#0" expanded="true" />
-            <element signature="e#5371#5385#0" expanded="true" />
-            <element signature="e#5482#5495#0" expanded="true" />
-            <element signature="e#5482#5495#0" expanded="true" />
-            <element signature="e#5592#5605#0" expanded="true" />
-            <element signature="e#5592#5605#0" expanded="true" />
-            <element signature="e#5657#5712#0" expanded="true" />
-            <element signature="e#5657#5712#0" expanded="true" />
-            <element signature="e#5722#5799#0" expanded="true" />
-            <element signature="e#5759#5782#0" expanded="true" />
-            <element signature="e#5759#5782#0" expanded="true" />
-            <element signature="e#5759#5798#0" expanded="true" />
-            <element signature="e#5722#5799#0" expanded="true" />
-            <element signature="e#5812#5832#0" expanded="true" />
-            <element signature="e#5812#5832#0" expanded="true" />
-            <element signature="e#5851#5882#0" expanded="true" />
-            <element signature="e#5851#5882#0" expanded="true" />
-            <element signature="e#6215#6238#0" expanded="true" />
-            <element signature="e#6215#6238#0" expanded="true" />
-            <element signature="e#6215#6255#0" expanded="true" />
-            <element signature="e#6365#6376#0" expanded="true" />
-            <element signature="e#6478#8835#0" expanded="true" />
-            <element signature="e#6513#8834#0" expanded="true" />
-            <element signature="e#8833#8834#0" expanded="true" />
-            <element signature="e#6478#8835#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/RecyclerAdapterAllSubscriptionToDoc.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/test/ClinicActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
-          <folding>
-            <element signature="e#2671#5564#0" expanded="true" />
-            <element signature="e#2671#5564#0" expanded="true" />
-            <element signature="e#2753#2765#0" expanded="true" />
-            <element signature="e#2753#2765#0" expanded="true" />
-            <element signature="e#2861#2874#0" expanded="true" />
-            <element signature="e#2861#2874#0" expanded="true" />
-            <element signature="e#2971#2984#0" expanded="true" />
-            <element signature="e#2971#2984#0" expanded="true" />
-            <element signature="e#3081#3095#0" expanded="true" />
-            <element signature="e#3081#3095#0" expanded="true" />
-            <element signature="e#3192#3205#0" expanded="true" />
-            <element signature="e#3192#3205#0" expanded="true" />
-            <element signature="e#3302#3315#0" expanded="true" />
-            <element signature="e#3302#3315#0" expanded="true" />
-            <element signature="e#3413#3427#0" expanded="true" />
-            <element signature="e#3413#3427#0" expanded="true" />
-            <element signature="e#3525#3539#0" expanded="true" />
-            <element signature="e#3525#3539#0" expanded="true" />
-            <element signature="e#3637#3651#0" expanded="true" />
-            <element signature="e#3637#3651#0" expanded="true" />
-            <element signature="e#3749#3762#0" expanded="true" />
-            <element signature="e#3749#3762#0" expanded="true" />
-            <element signature="e#3860#3874#0" expanded="true" />
-            <element signature="e#3860#3874#0" expanded="true" />
-            <element signature="e#3971#3985#0" expanded="true" />
-            <element signature="e#3971#3985#0" expanded="true" />
-            <element signature="e#4082#4095#0" expanded="true" />
-            <element signature="e#4082#4095#0" expanded="true" />
-            <element signature="e#4192#4205#0" expanded="true" />
-            <element signature="e#4192#4205#0" expanded="true" />
-            <element signature="e#4302#4315#0" expanded="true" />
-            <element signature="e#4302#4315#0" expanded="true" />
-            <element signature="e#4412#4426#0" expanded="true" />
-            <element signature="e#4412#4426#0" expanded="true" />
-            <element signature="e#4523#4537#0" expanded="true" />
-            <element signature="e#4523#4537#0" expanded="true" />
-            <element signature="e#4634#4647#0" expanded="true" />
-            <element signature="e#4634#4647#0" expanded="true" />
-            <element signature="e#4744#4758#0" expanded="true" />
-            <element signature="e#4744#4758#0" expanded="true" />
-            <element signature="e#4855#4869#0" expanded="true" />
-            <element signature="e#4855#4869#0" expanded="true" />
-            <element signature="e#4966#4979#0" expanded="true" />
-            <element signature="e#4966#4979#0" expanded="true" />
-            <element signature="e#5076#5089#0" expanded="true" />
-            <element signature="e#5076#5089#0" expanded="true" />
-            <element signature="e#5186#5200#0" expanded="true" />
-            <element signature="e#5186#5200#0" expanded="true" />
-            <element signature="e#5297#5311#0" expanded="true" />
-            <element signature="e#5297#5311#0" expanded="true" />
-            <element signature="e#5408#5421#0" expanded="true" />
-            <element signature="e#5408#5421#0" expanded="true" />
-            <element signature="e#5518#5531#0" expanded="true" />
-            <element signature="e#5518#5531#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="471">
+          <caret line="230" column="28" lean-forward="true" selection-start-line="230" selection-start-column="28" selection-end-line="230" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/PagerAdapterDoctorInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Fragments/MyItemRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/ChatActivityShowAllChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="2" selection-end-line="335" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_clinic_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="64" column="23" lean-forward="false" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/API/BaseAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2877">
+          <caret line="195" column="23" lean-forward="false" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_doc_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="116" column="42" lean-forward="false" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentInfoClinic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_clinic_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="220" column="48" lean-forward="false" selection-start-line="220" selection-start-column="33" selection-end-line="220" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/ClinicActivityInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="90" column="31" lean-forward="false" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Adapters/PagerAdapterClinicInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="110" column="59" lean-forward="false" selection-start-line="110" selection-start-column="59" selection-end-line="110" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_reviews_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/Activities/MainPageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentInfoDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tab_fragment_mention_clinic.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/d/healthbook/FragmentsTab/TabFragmentMentionsClinic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

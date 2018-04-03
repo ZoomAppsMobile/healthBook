@@ -17,7 +17,6 @@
                 android:text="Общая информация:"
                 android:textSize="18sp"
                 android:padding="5sp"
-
                 android:textColor="@color/light_gray" />
 
             <!--<TextView-->

@@ -329,11 +329,11 @@ public class ChatActivityShowAllChat extends AppCompatActivity {
                         drawerLayout.closeDrawer(Gravity.LEFT);
 
                         break;
-                    case R.id.nav_diary:
-                        Intent intent = new Intent(ChatActivityShowAllChat.this, DiaryActivity.class);
-                        startActivity(intent);
-                        finish();
-                        break;
+//                    case R.id.nav_diary:
+//                        Intent intent = new Intent(ChatActivityShowAllChat.this, DiaryActivity.class);
+//                        startActivity(intent);
+//                        finish();
+//                        break;
                     case R.id.nav_profile:
                         Intent intent2 = new Intent(ChatActivityShowAllChat.this, UserActivityInfo.class);
                         startActivity(intent2);

@@ -25,14 +25,14 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_user_icon"
             android:title="Аккаунт" />
-        <item
-            android:id="@+id/nav_diary"
-            android:icon="@drawable/ic_indicator_diary"
-            android:title="Дневник" />
+        <!--<item-->
+            <!--android:id="@+id/nav_diary"-->
+            <!--android:icon="@drawable/ic_indicator_diary"-->
+            <!--android:title="Дневник" />-->
         <item
             android:id="@+id/nav_folders"
             android:icon="@drawable/folder_image"
-            android:title="Папки" />
+            android:title="Дневник" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings_icon"

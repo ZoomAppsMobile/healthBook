@@ -82,19 +82,12 @@ public class ClinicActivityInfo extends AppCompatActivity implements ClinicInter
 
         final int main_appbar_max_height = (int) convertDpToPixel(120);
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.main_appbarClinic);
-
-
-
-
-
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layoutClinicInfo);
         tabLayout.addTab(tabLayout.newTab().setText("Информация"));
         tabLayout.addTab(tabLayout.newTab().setText("Специалисты"));
         tabLayout.addTab(tabLayout.newTab().setText("Отзывы"));
         tabLayout.addTab(tabLayout.newTab().setText("Статусы(0)"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-
         adapter = new PagerAdapterClinicInfo
                 (this, getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
@@ -110,9 +103,6 @@ public class ClinicActivityInfo extends AppCompatActivity implements ClinicInter
 
         }
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-
-
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

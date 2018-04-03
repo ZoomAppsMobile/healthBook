@@ -48,7 +48,12 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         if(holder.mItem!=null) {
             holder.mCreationDate.setVisibility(View.VISIBLE);
             holder.mFolderName.setText(holder.mItem.getName());
-            holder.mCreationDate.setText(mValues.get(position).getCreateDate());
+            try{
+                holder.mCreationDate.setText(mValues.get(position).getCreateDate());
+            }catch (Exception ex){
+                Log.e("MyItemRecyclerViewAdapt", "MyItemRecyclerViewAdapter.java:51)");
+            }
+
 
         }
         else{
