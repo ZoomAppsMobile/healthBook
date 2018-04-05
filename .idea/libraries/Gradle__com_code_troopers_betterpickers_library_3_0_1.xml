@@ -1,12 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.code-troopers.betterpickers:library-3.0.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/0fed59b2fd8b4e578a7166a241765305a89e1575/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/0fed59b2fd8b4e578a7166a241765305a89e1575/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/c015c435b61029af92edc13e4456d01fd1bb7497/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c015c435b61029af92edc13e4456d01fd1bb7497/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.code-troopers.betterpickers/library/3.0.1/c67970f5b171514baaffb2e5a0dad5d7c1ef7116/library-3.0.1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

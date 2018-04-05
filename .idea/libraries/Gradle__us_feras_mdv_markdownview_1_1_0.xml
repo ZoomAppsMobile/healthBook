@@ -1,12 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: us.feras.mdv:markdownview-1.1.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/0485d563edbc12b3e2d04c929a3b9c56958df64b/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/0485d563edbc12b3e2d04c929a3b9c56958df64b/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/88e74c1d16b21aea90602066b92d163d104addc8/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/88e74c1d16b21aea90602066b92d163d104addc8/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/us.feras.mdv/markdownview/1.1.0/126e0f203ec0e7b6d85b8c30a994d692658179f7/markdownview-1.1.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

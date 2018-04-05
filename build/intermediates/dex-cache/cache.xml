@@ -3,12 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Asus\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.1.1\5cd91fd014f5b72292f959748c20a2cefefae77d\eventbus-3.1.1.jar"
-        jumboMode="false"
+        jar="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="5cd91fd014f5b72292f959748c20a2cefefae77d">
-        <dex dex="C:\Users\Asus\Desktop\healthBook-Android_HealthBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.1.1_39e116557d1958af1e0996267421935e47a9e185\classes.dex" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c14a6200ec919842e320639e9c3e4632edd388ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b86a22594467e13b8bdb5297a10556a466c9b1a7">
+        <dex dex="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_692f4a0b9042efa0b690ebf25f37602fe7198a6f\classes.dex" />
     </item>
 
 </items>

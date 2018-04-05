@@ -1,11 +1,13 @@
 package com.example.d.healthbook.Adapters;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.d.healthbook.FragmentsTab.TabFragmentInfoDoc;
+import com.example.d.healthbook.FragmentsTab.TabFragmentMentionsClinic;
 import com.example.d.healthbook.FragmentsTab.TabFragmentReview;
 import com.example.d.healthbook.FragmentsTab.TabFragmentSchedule;
 import com.example.d.healthbook.FragmentsTab.TabFragmentStatus;
@@ -20,12 +22,14 @@ import com.example.d.healthbook.View.ViewPagerInterface;
 public class PagerAdapterDoctorInfo extends FragmentStatePagerAdapter implements ViewPagerInterface {
     int mNumOfTabs;
     private Context mContext;
+    String doctorId;
 
 
-    public PagerAdapterDoctorInfo(Context context, FragmentManager fm, int NumOfTabs) {
+    public PagerAdapterDoctorInfo(Context context, FragmentManager fm, int NumOfTabs, String doctorId) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
         this.mContext = context;
+        this.doctorId = doctorId;
     }
 
     TabFragmentInfoDoc tab1;
@@ -52,6 +56,11 @@ public class PagerAdapterDoctorInfo extends FragmentStatePagerAdapter implements
             case 2:
 //                tab3 = tab3 == null ? new TabFragmentSchedule() : tab3;
                 tab3 = new TabFragmentReview();
+                Bundle bundle = new Bundle();
+                bundle.putString("doctorId", doctorId);
+                tab3.setArguments(bundle);
+
+
                 if (((DoctorInterface) mContext).getData() != null) {
 //                    tab3.upDateData(((DoctorInterface) mContext).getData());
                 }

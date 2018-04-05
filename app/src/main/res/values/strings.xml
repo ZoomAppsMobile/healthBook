@@ -122,5 +122,8 @@
     <string name="title_activity_zoom">ZoomActivity</string>
     <string name="title_activity_folder">FolderActivity</string>
     <string name="title_activity_parameter_details">ParameterDetailsActivity</string>
-
+    <string name="qualifications">Квалифицированность</string>
+    <string name="mindfulness">Внимательность</string>
+    <string name="price_quality">Цена / Качество</string>
+    <string name="your_rewiews">Ваш отзыв</string>
 </resources>

@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.webkit.URLUtil;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -98,6 +99,8 @@ public class DoctorActivityInfo extends AppCompatActivity implements DoctorInter
     private FloatingActionButton fabSub1;
     private FloatingActionButton fabSub2;
     private boolean fabStatus = false;
+    @BindView(R.id.rating)
+    RatingBar rating;
     private ResponseSubscribeToDoctor registeredUserSubscribeToDoctor;
     private List<ResponseAllSubscriptionsToDoctor> registeredUserSubscriptions;
     private String id;
@@ -181,8 +184,12 @@ public class DoctorActivityInfo extends AppCompatActivity implements DoctorInter
         String name = getIntent().getStringExtra("nameDoc");
         String surname = getIntent().getStringExtra("surNameDoc");
         String company_name = getIntent().getStringExtra("company_name");
-
-
+        String ratingDoctor = getIntent().getStringExtra("ratingDoctor");
+        try{
+            rating.setRating(Float.parseFloat(ratingDoctor));
+        }catch (Exception ex){
+            Log.e("error", "rating.setRating(Float.parseFloat(ratingDoctor))");
+        }
         fabSub2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -243,12 +250,7 @@ public class DoctorActivityInfo extends AppCompatActivity implements DoctorInter
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
 
-        adapter = new
-
-                PagerAdapterDoctorInfo
-                (this, getSupportFragmentManager(), tabLayout.
-
-                        getTabCount());
+        adapter = new PagerAdapterDoctorInfo(this, getSupportFragmentManager(), tabLayout.getTabCount(), id);
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener()
@@ -470,7 +472,8 @@ public class DoctorActivityInfo extends AppCompatActivity implements DoctorInter
                         }
                     }
                     experienceTVINFO.setText(experianceOfDoctor);
-                }
+                }else
+                    experienceTVINFO.setText("Не указан");
 
 
                 if (adapter != null)

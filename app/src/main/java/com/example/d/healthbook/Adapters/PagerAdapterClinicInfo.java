@@ -1,6 +1,7 @@
 package com.example.d.healthbook.Adapters;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -24,11 +25,13 @@ import com.example.d.healthbook.View.ViewPagerClinicInterface;
 public class PagerAdapterClinicInfo extends FragmentStatePagerAdapter implements ViewPagerClinicInterface {
     int mNumOfTabs;
     private Context mContext;
+    String clinicId;
 
-    public PagerAdapterClinicInfo(Context context, FragmentManager fm, int NumOfTabs) {
+    public PagerAdapterClinicInfo(Context context, FragmentManager fm, int NumOfTabs, String clinicId) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
         this.mContext = context;
+        this.clinicId = clinicId;
     }
 
 
@@ -39,7 +42,6 @@ public class PagerAdapterClinicInfo extends FragmentStatePagerAdapter implements
 
     @Override
     public Fragment getItem(int position) {
-
         switch (position) {
             case 0:
                 tab1 = new TabFragmentInfoClinic();
@@ -55,6 +57,10 @@ public class PagerAdapterClinicInfo extends FragmentStatePagerAdapter implements
             case 2:
 //                tab3 = tab3 == null ? new TabFragmentSchedule() : tab3;
                 tab3 = new TabFragmentMentionsClinic();
+                Bundle bundle = new Bundle();
+                bundle.putString("clinicId", clinicId);
+                tab3.setArguments(bundle);
+
 //                if( ((DoctorInterface)mContext).getData()!=null){
 //                    tab3.upDateData(((DoctorInterface)mContext).getData());
 //                }
@@ -68,6 +74,7 @@ public class PagerAdapterClinicInfo extends FragmentStatePagerAdapter implements
             default:
                 return null;
         }
+
     }
 
     @Override

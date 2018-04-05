@@ -71,6 +71,7 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
     TextView experienceTVINFO;
 
 
+
     @BindView(R.id.jobName)
     TextView jobName;
 //jobName
@@ -87,6 +88,7 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
 
     @BindView(R.id.toolbar_title)
     TextView toolbar_title;
+    String id;
 
     PagerAdapterDoctorInfo adapter = null;
     private String expert_Room_ID = " ";
@@ -180,12 +182,12 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
                 if(registeredUser!=null && registeredUser.getUserId()!=null)
 
                     doctorInfoPresenter.getChat(Integer.parseInt(registeredUser.getUserId()));
-                    fabSub1.setClickable(false);
+                fabSub1.setClickable(false);
 
             }
         });
 
-        String id = getIntent().getStringExtra("idDoctor");
+        id = getIntent().getStringExtra("idDoctor");
         final String imageString = getIntent().getStringExtra("imageDoc");
         String name = getIntent().getStringExtra("nameDoc");
         String surname = getIntent().getStringExtra("surNameDoc");
@@ -203,11 +205,11 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
         profile_imageINFO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // openImage(view,imageString);
+                // openImage(view,imageString);
             }
         });
         seeDoctorInfoMethod(id);
-       // seeSubscriptions();
+        // seeSubscriptions();
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
@@ -225,13 +227,7 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
                 setText("Статус"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-
-        adapter = new
-
-                PagerAdapterDoctorInfo
-                (this, getSupportFragmentManager(), tabLayout.
-
-                        getTabCount());
+        adapter = new PagerAdapterDoctorInfo(this, getSupportFragmentManager(), tabLayout.getTabCount(), id);
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener()
@@ -325,7 +321,7 @@ public class ClinicActivity extends AppCompatActivity implements DoctorInterface
 
 
                 schedules = registeredUser.getSchedule();
-              //  Toast.makeText(getApplication(), "SUCCESS", Toast.LENGTH_LONG).show();
+                //  Toast.makeText(getApplication(), "SUCCESS", Toast.LENGTH_LONG).show();
                 doctorID = registeredUser.getId();
                 specialityTVINFO.setText(registeredUser.getSpecialityName());
                 String experianceOfDoctor = "Не указано";

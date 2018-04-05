@@ -89,7 +89,7 @@ public class ClinicActivityInfo extends AppCompatActivity implements ClinicInter
         tabLayout.addTab(tabLayout.newTab().setText("Статусы(0)"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         adapter = new PagerAdapterClinicInfo
-                (this, getSupportFragmentManager(), tabLayout.getTabCount());
+                (this, getSupportFragmentManager(), tabLayout.getTabCount(), id);
         viewPager.setAdapter(adapter);
 
 

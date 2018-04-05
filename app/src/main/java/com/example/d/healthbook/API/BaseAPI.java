@@ -13,6 +13,7 @@ import com.example.d.healthbook.Models.DiaryModel.ParameterType;
 import com.example.d.healthbook.Models.DiaryModel.ParameterTypeList;
 import com.example.d.healthbook.Models.DiaryModel.ParametersResponse;
 import com.example.d.healthbook.Models.LoginResponseModel;
+import com.example.d.healthbook.Models.MentionsModel;
 import com.example.d.healthbook.Models.RegisterResponse;
 import com.example.d.healthbook.Models.ResponseAllSubscriptionsToDoctor;
 import com.example.d.healthbook.Models.ResponseCategoryProtocol;
@@ -64,16 +65,13 @@ import retrofit2.http.Query;
 public interface BaseAPI {
 
 
-
-
     @Headers("Content-Type: application/json")
     @DELETE("healthbook/diary/{id}")
-    public Call<Void> deleteFamilyMember(@Header("auth-token") String auth_token ,@Path("id") String id);
+    public Call<Void> deleteFamilyMember(@Header("auth-token") String auth_token, @Path("id") String id);
 
     @Headers("Content-Type: application/json")
     @DELETE("calendar/action/{actionId}")
-    public Call<Void> deleteWomanTask(@Path("actionId") String id , @Header("auth-token") String auth_token );
-
+    public Call<Void> deleteWomanTask(@Path("actionId") String id, @Header("auth-token") String auth_token);
 
 
     @Headers("Content-Type: application/json")
@@ -83,9 +81,7 @@ public interface BaseAPI {
 
     @Headers("Content-Type: application/json")
     @PUT("calendar/action/{actionId}")
-    public Call<ResponseNoteType1> updateDrug(@Header("auth-token") String auth_token, @Body JsonObject dataToSend,@Path("actionId") String id );
-
-
+    public Call<ResponseNoteType1> updateDrug(@Header("auth-token") String auth_token, @Body JsonObject dataToSend, @Path("actionId") String id);
 
 
     @Headers("Content-Type: application/json")
@@ -161,7 +157,7 @@ public interface BaseAPI {
 
     @GET("booking/expert/search")
     public Call<ResponseDoctorList> seeDoctorListFilter(@Query("city_id") String city_id, @Query("speciality") String speciality,
-                                                        @Query("full_name") String full_name,@Query("page") Integer page);
+                                                        @Query("full_name") String full_name, @Query("page") Integer page);
 
     @POST("booking/expert/search")
     public Call<ResponseDoctorList> addDoctorList(@Query("page") Integer page, @Query("city_id") Integer city_id);
@@ -190,7 +186,7 @@ public interface BaseAPI {
 
 
     @GET("booking/companyPoint/clinic/search")
-    public Call<ResponseClinicList> seeClinicListByNameandCity(@Query("name") String name,@Query("city_id ") String city_id );
+    public Call<ResponseClinicList> seeClinicListByNameandCity(@Query("name") String name, @Query("city_id ") String city_id);
 
 
     @GET("booking/visit/enroll")
@@ -220,35 +216,23 @@ public interface BaseAPI {
     @PUT("accounts/user/{user_id}")
     public Call<ResponseEditUserProfile> editUserProfile(@Path("user_id") Integer user_id, @Header("auth-token") String auth_token, @Body JsonObject dataToSend);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Headers("Content-Type: application/json")
+    @GET("accounts/user/{user_id}")
+    public Call<ResponseEditUserProfile> getUserData(@Path("user_id") Object user_id);
 
     @GET("healthbook/diary")
     public Call<ResponseMyFamilyMembers> seeFamilyMembers(@Header("auth-token") String auth_token);
 
     @GET("healthbook/parameter/monitorParameter/{id}")
-    public Call<ParametersResponse> getFolderParameter(@Path("id") String id , @Header("auth-token") String auth_token );
+    public Call<ParametersResponse> getFolderParameter(@Path("id") String id, @Header("auth-token") String auth_token);
 
     @GET("healthbook/dictionary/parameterType")
-    public Call<List<ParameterTypeList>> getParameterTypes( @Header("auth-token") String auth_token );
+    public Call<List<ParameterTypeList>> getParameterTypes(@Header("auth-token") String auth_token);
 
     @GET("healthbook/parameter/{id}/table?page=1&size=4")
-    public Call<ParameterTableResponse> getFolderParameterTable(@Path("id") String id , @Header("auth-token") String auth_token );
+    public Call<ParameterTableResponse> getFolderParameterTable(@Path("id") String id, @Header("auth-token") String auth_token);
 
+    @Headers("Content-Type: application/json")
     @GET("calendar/action")
     public Call<List<ResponseNoteType1>> seeNoteType1(@Header("auth-token") String auth_token);
 
@@ -276,25 +260,22 @@ public interface BaseAPI {
     public Call<List<FolderResponse2>> addFolderData(@Header("auth-token") String auth_token, @Body List<FolderDatum> folderDatum);
 
 
-
-
     @Headers("Content-Type: application/json")
     @POST("healthbook/parameter/monitorParameter")
     public Call<MonitorResponse> addMonitorType(@Header("auth-token") String auth_token, @Body MonitorRequest monitorRequest);
-
 
 
     //CHAT
     @GET("chat/get_chats")
     public Call<DialogsResponseData> getDialogsList(@Header("auth-token") String auth_token,
                                                     @Header("USER-ID") Integer user_id,
-                                                    @Query("user_id") Integer _user_id ,
+                                                    @Query("user_id") Integer _user_id,
                                                     @Query("role") String role);
 
     @GET("chat/add_chat")
     public Call<CreateChatResponseData> addChat(@Header("auth-token") String auth_token,
                                                 @Header("USER-ID") Integer user_id,
-                                                @Query("chat_type") String chat_type ,
+                                                @Query("chat_type") String chat_type,
                                                 @Query("chat_name") String chat_name,
                                                 @Query("participants") String participants);
 
@@ -305,21 +286,21 @@ public interface BaseAPI {
 
     @GET("accounts/user")
     public Call<List<ResponseGetUserData>> getDialogParticipantsList(@Header("auth-token") String auth_token,
-                                                                     @Query("idList") String uidList );
+                                                                     @Query("idList") String uidList);
 
     @GET("chat/edit_chat")
     public Call<CreateChatResponseData> editChat(@Header("auth-token") String auth_token,
                                                  @Header("USER-ID") Integer user_id,
                                                  @Query("chat_id") String chat_id,
                                                  @Query("chat_name") String chat_name,
-                                                 @Query("participants") String participants );
+                                                 @Query("participants") String participants);
 
     //Channel
     @GET("content/subscriber/isSubscribed")
     public Call<SubsriptionCheckResponseData> checkChannelSubscription(@Header("auth-token") String auth_token,
                                                                        @Header("USER-ID") Integer user_id,
-                                                                       @Query("id") String channel_id ,
-                                                                       @Query("type") String type );
+                                                                       @Query("id") String channel_id,
+                                                                       @Query("type") String type);
 
     @GET("content/post")
     public Call<ResponseDoctorList> getChannelNews(@Header("auth-token") String auth_token,
@@ -327,7 +308,7 @@ public interface BaseAPI {
                                                    @Query("channel_id") String channel_id);
 
     @POST("accounts/phone")
-    public Call<String> setPhone(@Header("Content-Type")String contentType,
+    public Call<String> setPhone(@Header("Content-Type") String contentType,
                                  @Header("auth-token") String auth_token,
                                  @Header("USER-ID") Integer user_id,
                                  @Body JsonObject phoneJson);
@@ -346,9 +327,13 @@ public interface BaseAPI {
     Call<LoginResponseModel> setTokenVk(@Query("code") String code);
 
     @GET("/accounts/login/fb")
-    Call<LoginResponseModel> setTokenFb(@Query("code") String code , @Query("redirectUri") String redirectUri);
+    Call<LoginResponseModel> setTokenFb(@Query("code") String code, @Query("redirectUri") String redirectUri);
 
+    @GET("booking/companyPoint/{id}/mentions")
+    Call<MentionsModel> getMention(@Path("id") String id, @Header("auth-token") String token);
 
+    @GET("booking/expert/{id}/mentions")
+    Call<MentionsModel> getMentionExspert(@Path("id") String id, @Header("auth-token") String token);
 
 }
 

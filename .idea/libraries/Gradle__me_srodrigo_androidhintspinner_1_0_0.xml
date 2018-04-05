@@ -1,12 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: me.srodrigo:androidhintspinner-1.0.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/6b3787d3e91428abc6fa7df77632543a29804914/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/6b3787d3e91428abc6fa7df77632543a29804914/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/6b8967cfe09cbb9421569e8031df9487b09d575b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6b8967cfe09cbb9421569e8031df9487b09d575b/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.srodrigo/androidhintspinner/1.0.0/e5f03e9f004f142d668a43ca28c48a7ae5200f96/androidhintspinner-1.0.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
