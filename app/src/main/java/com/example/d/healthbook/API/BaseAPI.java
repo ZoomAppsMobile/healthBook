@@ -5,6 +5,7 @@ import com.example.d.healthbook.CalendarBekarysa.womancycle.Result;
 import com.example.d.healthbook.Models.Chat.ChatResponseData;
 import com.example.d.healthbook.Models.Chat.CreateChatResponseData;
 import com.example.d.healthbook.Models.Chat.DialogsResponseData;
+import com.example.d.healthbook.Models.CheckVisit;
 import com.example.d.healthbook.Models.CityList;
 import com.example.d.healthbook.Models.DefaultUpdateResponseModel;
 import com.example.d.healthbook.Models.DiaryModel.CompleteDiaryData;
@@ -59,6 +60,7 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
+import retrofit2.http.Part;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -334,6 +336,25 @@ public interface BaseAPI {
 
     @GET("booking/expert/{id}/mentions")
     Call<MentionsModel> getMentionExspert(@Path("id") String id, @Header("auth-token") String token);
+
+    @GET("booking/mention/site")
+    Call<CheckVisit> checkVisit(
+            @Header("auth-token") String token,
+            @Query("entity_id") String entity_id,
+            @Query("entity_type") String entity_type
+    );
+
+    @POST("booking/mention")
+    Call<Void> addRewiews(
+            @Header("auth-token") String token,
+            @Part("entity_type") String entity_type,
+            @Part("entity_id") String entity_id,
+            @Part("visit_id") int visit_id,
+            @Part("efficiency_mark") float efficiency_mark,
+            @Part("performance_mark") float performance_mark,
+            @Part("recommendation_mark") float recommendation_mark,
+            @Part("text") String text
+    );
 
 }
 

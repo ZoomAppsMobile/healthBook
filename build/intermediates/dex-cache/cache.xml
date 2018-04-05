@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Asus\Desktop\healthBook\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c14a6200ec919842e320639e9c3e4632edd388ff\classes.dex" />
+        <dex dex="C:\Users\Asus\Desktop\healthBook\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a3e2d1826cc65c883e9138e5000433300183106a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Asus\Desktop\healthBook\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="b86a22594467e13b8bdb5297a10556a466c9b1a7">
-        <dex dex="C:\Users\Asus\Desktop\healthBook-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_692f4a0b9042efa0b690ebf25f37602fe7198a6f\classes.dex" />
+        sha1="81d2e44edbfe606aea33de1e1df2ffeff20c0d9a">
+        <dex dex="C:\Users\Asus\Desktop\healthBook\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4eaefae5f6359035158092fb8b7b28c0a8aee2c9\classes.dex" />
     </item>
 
 </items>
